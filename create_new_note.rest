@@ -1,0 +1,30 @@
+# GET http://localhost:3001/api/notes
+
+GET http://localhost:3001/api/persons
+
+###
+GET http://localhost:3001/api/ersons/4
+###
+DELETE  http://localhost:3001/api/persons/799
+
+### 
+
+POST http://localhost:3001/api/persons HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Fat stanley",
+    "number": "445-332-1123"
+}
+###
+GET http://localhost:3001/api/info HTTP/1.1
+
+###
+POST http://localhost:3001/api/notes/ HTTP/1.1
+content-type: application/json
+
+{
+    "id": 4,
+    "content": "The man from paris is made of peanuts",
+    "important": false
+}
